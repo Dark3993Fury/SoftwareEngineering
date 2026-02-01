@@ -88,3 +88,22 @@ Both models use **Parallelism** (multiple teams working at once), but their phil
     *   Team C works on Networking.
     *   **Result**: They merge their work after 2 years. If the UI Team is late, the whole release waits. They don't just "cut" the Start Menu to ship on time.
 
+---
+
+## RAD Model vs Traditional SDLC
+
+Traditional SDLC follows a fixed, step-by-step process where each phase is completed one by one and the final software is delivered at the end, with little customer involvement during development. In contrast, the RAD model focuses on fast development using prototypes, frequent user feedback, and multiple iterations, allowing changes at any stage and delivering working parts of the software much earlier.
+
+| Parameter | RAD Model | Traditional SDLC |
+| :--- | :--- | :--- |
+| **Stages** | Flexible and not strictly defined | Structured methodology with well-defined stages |
+| **Development Approach** | Iterative/Incremental; stages can be reviewed/repeated | Predictive, inflexible, and rigid |
+| **Prototypes** | **Extensive use** of prototypes for early validation | Little or no use of prototypes |
+| **Requirements** | All requirements need not be known at start | All requirements must be defined before development |
+| **Changes** | Easy to accommodate changes | Difficult to accommodate changes due to sequential flow |
+| **Customer Feedback** | **Continuous** and extensive user feedback | Limited customer feedback |
+| **Documentation** | Minimal documentation | Extensive and strict documentation required |
+| **Team Size** | Small, independent teams work on modules | Larger team with fixed roles across stages |
+| **Preferred Projects** | Short-duration projects with sufficient budget for tools | Long-term projects with limited budget |
+| **Components Used** | Reusable components reduce development time | Components usually built from scratch |
+| **Reusability** | High reuse of templates, modules, and components | Low or no reusability |
