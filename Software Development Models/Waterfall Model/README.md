@@ -71,6 +71,22 @@ While Agile is popular today, Waterfall is still the **superior choice** in spec
 
 ---
 
+
+---
+
+## Real-Life Example: Nuclear Power Plant Control System
+
+*   **The Context**: Building the software that manages cooling rods in a nuclear reactor. Safety is absolute; change is dangerous.
+*   **Why Waterfall?**: You cannot "iterate" or "fail fast" with a nuclear core. Every requirement (temperature thresholds, physical failsafes) must be strictly defined, documented, and approved by regulatory bodies *before* a single line of code is written.
+*   **The Execution**:
+    1.  **Requirements**: 2 years of safety specifications.
+    2.  **Design**: 1 year of blueprinting hardware/software interfaces.
+    3.  **Implementation**: 6 months of rigorous coding (likely in C or Ada).
+    4.  **Verification**: 1 year of simulation testing.
+    5.  **Operation**: The system runs unchanged for decades.
+
+---
+
 ## Simulation
 
 To truly understand the **strict dependencies** of the Waterfall model, run the included Python simulation. It demonstrates how you strictly cannot proceed to the next phase until the previous one is signed off.

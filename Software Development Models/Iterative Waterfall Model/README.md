@@ -61,6 +61,21 @@ The Iterative Waterfall is the "Real World" Waterfall. Pure classical waterfall 
 
 ---
 
+
+---
+
+## Real-Life Example: Local Inventory Management System
+
+*   **The Context**: A medium-sized retail shop needs a custom app to track stock in their local warehouse.
+*   **Why Iterative Waterfall?**: They know mostly what they want (Waterfall structure), but the hardware (barcode scanners) might behave unexpectedly.
+*   **The Execution**:
+    1.  **Phase 1**: Team designs the "Scan to Add" feature.
+    2.  **Problem**: During Testing, they realize the fonts are too small for the warehouse workers' tablets.
+    3.  **Iteration**: Instead of shipping the bad UI, they trigger a **Feedback Loop**. Control goes back to the **Design Phase**.
+    4.  **Fix**: The design is updated for larger buttons, code is refactored, and then it moves to Testing again.
+
+---
+
 ## Simulation
 
 The standard Waterfall simulation flows one way. The Iterative simulation below introduces **randomized "defects"** that force the project to go back a step!

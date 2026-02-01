@@ -51,6 +51,20 @@ Different teams work on different components simultaneously (in parallel) to spe
 
 ---
 
+
+---
+
+## Real-Life Example: Word Processor (e.g., MS Word 1.0)
+
+*   **The Context**: You want to release a competitor to an existing typewriter software. Speed to market is key.
+*   **Why Incremental?**: You don't need "Clip Art" to launch. You just need to let people type.
+*   **The Execution (Staged Delivery)**:
+    *   **Increment 1**: Basic Typing, Saving, Printing. **RELEASED TO MARKET.** (Users can start writing).
+    *   **Increment 2**: Spell Check & Fonts. (Delivered as an update 3 months later).
+    *   **Increment 3**: Tables & Graphics. (Delivered 6 months later).
+
+---
+
 ## Simulation
 
 The Python simulation below demonstrates the **Staged Delivery** approach. It builds a "User Management System" in 3 distinct increments, showing how the product grows over time.

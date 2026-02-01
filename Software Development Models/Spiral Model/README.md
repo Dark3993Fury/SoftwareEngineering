@@ -47,6 +47,21 @@ The Spiral Model is heavy. It is **not** for small websites or simple apps. It i
 
 ---
 
+
+---
+
+## Real-Life Example: Next-Gen Fighter Jet Navigation
+
+*   **The Context**: Developing the navigation system for an experimental military aircraft. The technology for the radar is unproven.
+*   **Why Spiral?**: The risk is massive. If the radar doesn't fit in the nose cone or overheats, the project fails. You can't just "build it and see."
+*   **The Execution**:
+    *   **Spiral 1 (Feasibility)**: Build a plastic mockup of the radar to see if it fits. **Risk Check: Passed.**
+    *   **Spiral 2 (Concept)**: Write basic software to interpret radar signals in a lab. **Risk Check: Passed.**
+    *   **Spiral 3 (Design)**: Integrate reliability failsafes. **Risk Check: Failed** (System overheated). -> *Mitigation Plan Enacted.*
+    *   **Spiral 4 (Production)**: Final coding flight tests.
+
+---
+
 ## Simulation
 
 The simulation below demonstrates the **Risk Analysis** phase. Unlike other models, the Spiral model can **ABORT** a project if the risk in a loop is deemed too high to proceed.
