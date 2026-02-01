@@ -7,7 +7,16 @@ The **Software Development Life Cycle (SDLC)** is a structured process used by t
 
 It is arguably the most important concept in Software Engineering. Without it, development is chaotic and unpredictable (like the [Big Bang Model](./Big%20Bang%20Model/README.md)).
 
-![SDLC Phases](sdlc_phases.png)
+```mermaid
+graph TD
+    A[1. Requirements] --> B[2. Analysis]
+    B --> C[3. Design]
+    C --> D[4. Implementation]
+    D --> E[5. Testing]
+    E --> F[6. Deployment]
+    F --> G[7. Maintenance]
+    G --> A
+```
 
 ## Why is SDLC Important?
 1.  **Standardization**: Every developer speaks the same language.
