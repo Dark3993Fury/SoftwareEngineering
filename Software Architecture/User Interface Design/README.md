@@ -18,7 +18,7 @@ A software application becomes popular and successful when its user interface ex
 | **Clear to Understand** | Unambiguous labels, icons, and messaging |
 | **Consistent** | Uniform design patterns across all screens |
 
-![UI Design Phases](file:///C:/Users/A364013/Desktop/SoftwareEngineering/SoftwareEngineering/Software%20Architecture/User%20Interface%20Design/ui_design_phases.svg)
+<img src="./ui_design_phases.svg" alt="UI Design Phases" width="800" />
 
 ---
 
