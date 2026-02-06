@@ -18,7 +18,7 @@ A software application becomes popular and successful when its user interface ex
 | **Clear to Understand** | Unambiguous labels, icons, and messaging |
 | **Consistent** | Uniform design patterns across all screens |
 
-![UI Design Phases](ui_design_phases.svg)
+![UI Design Phases](file:///C:/Users/A364013/Desktop/SoftwareEngineering/SoftwareEngineering/Software%20Architecture/User%20Interface%20Design/ui_design_phases.svg)
 
 ---
 
@@ -69,6 +69,17 @@ graph TB
     U[User] --> |Interacts with| GUI
     GUI --> |Provides| FB[Visual Feedback]
     FB --> |Confirms| A[Actions]
+    
+    style GUI fill:#2d3436,color:#fff,stroke:#fff
+    style W fill:#0984e3,color:#fff
+    style M fill:#0984e3,color:#fff
+    style I fill:#0984e3,color:#fff
+    style B fill:#0984e3,color:#fff
+    style F fill:#0984e3,color:#fff
+    style D fill:#0984e3,color:#fff
+    style U fill:#6c5ce7,color:#fff
+    style FB fill:#00b894,color:#fff
+    style A fill:#fab1a0,color:#000
 ```
 
 ---
@@ -108,10 +119,14 @@ flowchart TB
     Phase3 --> Phase4
     Phase4 -.->|Iterate| Phase1
     
-    style Phase1 fill:#ff6b6b,color:#fff
-    style Phase2 fill:#4ecdc4,color:#fff
-    style Phase3 fill:#45b7d1,color:#fff
-    style Phase4 fill:#96ceb4,color:#fff
+    style Phase1 fill:#d63031,color:#fff,stroke:#fff
+    style Phase2 fill:#00b894,color:#fff,stroke:#fff
+    style Phase3 fill:#0984e3,color:#fff,stroke:#fff
+    style Phase4 fill:#6ab04c,color:#fff,stroke:#fff
+    style A1 fill:#ff7675,color:#fff
+    style A2 fill:#55efc4,color:#000
+    style A3 fill:#74b9ff,color:#000
+    style A4 fill:#badc58,color:#000
 ```
 
 ### Phase 1: User, Task, Environmental Analysis & Modeling
@@ -159,25 +174,35 @@ flowchart TB
 These three fundamental principles form the foundation of effective user interface design:
 
 ```mermaid
-mindmap
-  root((Golden Rules<br/>of UI Design))
-    User Control
-      Flexible interaction
-      Interruptible & undoable
-      Customizable for skill levels
-      Hide technical details
-      Direct object manipulation
-    Memory Load
-      Reduce short-term memory demand
-      Meaningful defaults
-      Intuitive shortcuts
-      Real-world metaphors
-      Progressive disclosure
-    Consistency
-      Meaningful context
-      Family consistency
-      Respect expectations
-      Predictable behavior
+graph TD
+    classDef mainNode fill:#2c3e50,stroke:#ecf0f1,stroke-width:2px,color:#fff;
+    classDef subNode fill:#34495e,stroke:#bdc3c7,color:#fff;
+    classDef leafNode fill:#7f8c8d,stroke:#95a5a6,color:#fff;
+
+    Root((Golden Rules<br/>of UI Design)):::mainNode
+    
+    Root --> Rule1[Place User<br/>in Control]:::subNode
+    Root --> Rule2[Reduce User's<br/>Memory Load]:::subNode
+    Root --> Rule3[Make Interface<br/>Consistent]:::subNode
+
+    %% Rule 1 Children
+    Rule1 --> R1A[Flexible<br/>Interaction]:::leafNode
+    Rule1 --> R1B[Interruptible<br/>& Undoable]:::leafNode
+    Rule1 --> R1C[Customize<br/>Skills]:::leafNode
+    Rule1 --> R1D[Direct<br/>Manipulation]:::leafNode
+    Rule1 --> R1E[Hide<br/>Internals]:::leafNode
+
+    %% Rule 2 Children
+    Rule2 --> R2A[Reduce Short-term<br/>Memory]:::leafNode
+    Rule2 --> R2B[Meaningful<br/>Defaults]:::leafNode
+    Rule2 --> R2C[Intuitive<br/>Shortcuts]:::leafNode
+    Rule2 --> R2D[Real-world<br/>Metaphors]:::leafNode
+    Rule2 --> R2E[Progressive<br/>Disclosure]:::leafNode
+
+    %% Rule 3 Children
+    Rule3 --> R3A[Meaningful<br/>Context]:::leafNode
+    Rule3 --> R3B[Family<br/>Consistency]:::leafNode
+    Rule3 --> R3C[Respect<br/>Expectations]:::leafNode
 ```
 
 ### 1️⃣ Place the User in Control
