@@ -59,7 +59,7 @@
   </g>
 
   <!-- Connecting Arrows -->
-  <path d="M 470 140 Q 560 140 560 150" stroke="#0277bd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 465 140 C 490 140 480 180 491 180" stroke="#0277bd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
   <path d="M 560 210 Q 560 260 560 305" stroke="#0277bd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
   <path d="M 560 370 Q 560 420 470 420" stroke="#0277bd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
   <path d="M 330 420 Q 240 420 240 375" stroke="#0277bd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
