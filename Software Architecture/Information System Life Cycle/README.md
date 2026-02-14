@@ -2,7 +2,7 @@
 
 The **Information System Life Cycle (ISLC)** is a comprehensive framework used to manage the development, maintenance, and retirement of an organization's information systems. Unlike the standard Software Development Life Cycle (SDLC), ISLC has a broader scope, focusing not just on the software but on the entire system—including data, hardware, people, and processes—throughout its entire lifespan.
 
-![ISLC Cycle](file:///C:/Users/A364013/Desktop/SoftwareEngineering/SoftwareEngineering/Software%20Architecture/Information%20System%20Life%20Cycle/islc_cycle.svg)
+<img src="./islc_cycle.svg" alt="ISLC Cycle" width="800" />
 
 ---
 
