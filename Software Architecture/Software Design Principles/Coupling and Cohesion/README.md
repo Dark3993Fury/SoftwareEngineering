@@ -4,7 +4,7 @@
 
 Coupling and Cohesion are the two most critical metrics for determining the architectural quality of a software system. They measure how modules interact with each other (Coupling) and how elements within a module interact (Cohesion).
 
-![Coupling vs Cohesion](file:///C:/Users/A364013/Desktop/SoftwareEngineering/SoftwareEngineering/Software%20Architecture/Software%20Design%20Principles/Coupling%20and%20Cohesion/coupling_vs_cohesion.svg)
+<img src="./coupling_vs_cohesion.svg" alt="Coupling vs Cohesion" width="800" />
 
 ---
 
