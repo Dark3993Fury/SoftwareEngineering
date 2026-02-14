@@ -1,0 +1,95 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.2"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0277bd" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Information System Life Cycle (ISLC)</text>
+
+  <!-- Center Hub: Continuous Process -->
+  <circle cx="400" cy="260" r="60" fill="#e1f5fe" stroke="#0277bd" stroke-width="2"/>
+  <text x="400" y="250" font-family="Arial" font-size="14" font-weight="bold" fill="#01579b" text-anchor="middle">Continuous</text>
+  <text x="400" y="270" font-family="Arial" font-size="14" font-weight="bold" fill="#01579b" text-anchor="middle">Improvement</text>
+
+  <!-- Cycle Nodes -->
+  <!-- 1. Feasibility (Top) -->
+  <g transform="translate(400, 140)">
+    <rect x="-60" y="-30" width="120" height="60" rx="10" ry="10" fill="#b3e5fc" stroke="#0277bd" stroke-width="2" filter="url(#shadow)"/>
+    <text x="0" y="-5" font-family="Arial" font-size="12" font-weight="bold" fill="#01579b" text-anchor="middle">1. Feasibility</text>
+    <text x="0" y="15" font-family="Arial" font-size="10" fill="#555" text-anchor="middle">Analysis</text>
+  </g>
+
+  <!-- 2. Requirements (Top Right) -->
+  <g transform="translate(560, 180)">
+    <rect x="-60" y="-30" width="120" height="60" rx="10" ry="10" fill="#b3e5fc" stroke="#0277bd" stroke-width="2" filter="url(#shadow)"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" fill="#01579b" text-anchor="middle">2. Requirements</text>
+  </g>
+
+  <!-- 3. Design (Bottom Right) -->
+  <g transform="translate(560, 340)">
+     <rect x="-60" y="-30" width="120" height="60" rx="10" ry="10" fill="#b3e5fc" stroke="#0277bd" stroke-width="2" filter="url(#shadow)"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" fill="#01579b" text-anchor="middle">3. Design</text>
+  </g>
+
+  <!-- 4. Implementation (Bottom) -->
+  <g transform="translate(400, 420)">
+     <rect x="-60" y="-30" width="120" height="60" rx="10" ry="10" fill="#b3e5fc" stroke="#0277bd" stroke-width="2" filter="url(#shadow)"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" fill="#01579b" text-anchor="middle">4. Implementation</text>
+  </g>
+
+  <!-- 5. Validation (Bottom Left) -->
+  <g transform="translate(240, 340)">
+     <rect x="-60" y="-30" width="120" height="60" rx="10" ry="10" fill="#b3e5fc" stroke="#0277bd" stroke-width="2" filter="url(#shadow)"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" font-weight="bold" fill="#01579b" text-anchor="middle">5. Validation</text>
+  </g>
+
+  <!-- 6. Deployment (Top Left) -->
+  <g transform="translate(240, 180)">
+     <rect x="-60" y="-30" width="120" height="60" rx="10" ry="10" fill="#b3e5fc" stroke="#0277bd" stroke-width="2" filter="url(#shadow)"/>
+    <text x="0" y="-5" font-family="Arial" font-size="12" font-weight="bold" fill="#01579b" text-anchor="middle">6. Deployment</text>
+    <text x="0" y="15" font-family="Arial" font-size="10" fill="#555" text-anchor="middle">&amp; Maintenance</text>
+  </g>
+
+  <!-- Connecting Arrows -->
+  <path d="M 470 140 Q 560 140 560 150" stroke="#0277bd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 560 210 Q 560 260 560 305" stroke="#0277bd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 560 370 Q 560 420 470 420" stroke="#0277bd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 330 420 Q 240 420 240 375" stroke="#0277bd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 240 310 Q 240 260 240 215" stroke="#0277bd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 240 150 Q 240 140 330 140" stroke="#0277bd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Pillars (Surrounding Rectangles) -->
+  <g transform="translate(50, 450)">
+      <rect x="0" y="0" width="100" height="30" rx="5" ry="5" fill="#c8e6c9" stroke="#388e3c"/>
+      <text x="50" y="20" font-family="Arial" font-size="10" fill="#1b5e20" text-anchor="middle">Sustainability</text>
+  </g>
+  <g transform="translate(160, 450)">
+      <rect x="0" y="0" width="100" height="30" rx="5" ry="5" fill="#c8e6c9" stroke="#388e3c"/>
+      <text x="50" y="20" font-family="Arial" font-size="10" fill="#1b5e20" text-anchor="middle">Scalability</text>
+  </g>
+  <g transform="translate(270, 450)">
+      <rect x="0" y="0" width="100" height="30" rx="5" ry="5" fill="#fff9c4" stroke="#fbc02d"/>
+      <text x="50" y="20" font-family="Arial" font-size="10" fill="#f57f17" text-anchor="middle">Risk Mgmt</text>
+  </g>
+  <g transform="translate(380, 450)">
+      <rect x="0" y="0" width="100" height="30" rx="5" ry="5" fill="#fff9c4" stroke="#fbc02d"/>
+      <text x="50" y="20" font-family="Arial" font-size="10" fill="#f57f17" text-anchor="middle">Integration</text>
+  </g>
+  <g transform="translate(490, 450)">
+      <rect x="0" y="0" width="100" height="30" rx="5" ry="5" fill="#ffe0b2" stroke="#f57c00"/>
+      <text x="50" y="20" font-family="Arial" font-size="10" fill="#e65100" text-anchor="middle">Training</text>
+  </g>
+   <g transform="translate(600, 450)">
+      <rect x="0" y="0" width="130" height="30" rx="5" ry="5" fill="#e1bee7" stroke="#8e24aa"/>
+      <text x="65" y="20" font-family="Arial" font-size="10" fill="#4a148c" text-anchor="middle">Support &amp; Improvement</text>
+  </g>
+
+</svg>
