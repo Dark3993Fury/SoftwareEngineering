@@ -1,0 +1,55 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Jelinski-Moranda (J-M) Model</text>
+  <text x="400" y="65" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">Assumption: Hazard Rate is constant between failures, steps down after fix.</text>
+
+  <!-- Axes -->
+  <line x1="80" y1="400" x2="750" y2="400" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/> <!-- X Axis -->
+  <line x1="80" y1="400" x2="80" y2="100" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/> <!-- Y Axis -->
+
+  <!-- Labels -->
+  <text x="750" y="430" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Cumulative Time</text>
+  <text x="40" y="100" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle" transform="rotate(-90 40,100)">Hazard Rate λ(t)</text>
+
+  <!-- Step Function -->
+  
+  <!-- Interval 1 (N faults) -->
+  <line x1="80" y1="150" x2="200" y2="150" stroke="#d32f2f" stroke-width="3"/>
+  <text x="140" y="140" font-family="Arial" font-size="12" fill="#d32f2f" text-anchor="middle">λ = ϕN</text>
+  <line x1="200" y1="150" x2="200" y2="200" stroke="#999" stroke-width="1" stroke-dasharray="4"/>
+  <text x="200" y="420" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Fail 1</text>
+
+  <!-- Interval 2 (N-1 faults) -->
+  <line x1="200" y1="200" x2="350" y2="200" stroke="#1976d2" stroke-width="3"/>
+  <text x="275" y="190" font-family="Arial" font-size="12" fill="#1976d2" text-anchor="middle">λ = ϕ(N-1)</text>
+  <line x1="350" y1="200" x2="350" y2="250" stroke="#999" stroke-width="1" stroke-dasharray="4"/>
+  <text x="350" y="420" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Fail 2</text>
+
+  <!-- Interval 3 (N-2 faults) -->
+  <line x1="350" y1="250" x2="550" y2="250" stroke="#388e3c" stroke-width="3"/>
+  <text x="450" y="240" font-family="Arial" font-size="12" fill="#388e3c" text-anchor="middle">λ = ϕ(N-2)</text>
+  <line x1="550" y1="250" x2="550" y2="300" stroke="#999" stroke-width="1" stroke-dasharray="4"/>
+  <text x="550" y="420" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Fail 3</text>
+
+  <!-- Interval 4 (N-3) -->
+   <line x1="550" y1="300" x2="730" y2="300" stroke="#fbc02d" stroke-width="3"/>
+   <text x="640" y="290" font-family="Arial" font-size="12" fill="#fbc02d" text-anchor="middle">λ = ϕ(N-3)</text>
+   <text x="730" y="420" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Fail 4...</text>
+
+  <!-- Comparison Annotation -->
+  <rect x="500" y="80" width="250" height="80" rx="10" ry="10" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
+  <text x="515" y="100" font-family="Arial" font-size="12" font-weight="bold" fill="#333">Key Characteristic:</text>
+  <text x="515" y="120" font-family="Arial" font-size="11" fill="#555">"Memoryless" Property.</text>
+  <text x="515" y="135" font-family="Arial" font-size="11" fill="#555">Failure rate is constant</text>
+  <text x="515" y="150" font-family="Arial" font-size="11" fill="#555">until a bug is fixed.</text>
+
+</svg>

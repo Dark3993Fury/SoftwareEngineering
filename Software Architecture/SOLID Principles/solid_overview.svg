@@ -1,0 +1,76 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">SOLID Principles</text>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">The 5 Commandments of Object-Oriented Design</text>
+
+  <!-- 1. SRP -->
+  <g transform="translate(50, 100)">
+    <rect x="0" y="0" width="130" height="150" rx="10" ry="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" filter="url(#shadow)"/>
+    <text x="65" y="40" font-family="Arial" font-size="40" font-weight="bold" fill="#1565c0" text-anchor="middle">S</text>
+    <text x="65" y="70" font-family="Arial" font-size="12" font-weight="bold" fill="#1565c0" text-anchor="middle">Single</text>
+    <text x="65" y="90" font-family="Arial" font-size="12" font-weight="bold" fill="#1565c0" text-anchor="middle">Responsibility</text>
+    <text x="65" y="120" font-family="Arial" font-size="10" fill="#555" text-anchor="middle">"Do One Thing"</text>
+  </g>
+
+  <!-- 2. OCP -->
+  <g transform="translate(190, 100)">
+    <rect x="0" y="0" width="130" height="150" rx="10" ry="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" filter="url(#shadow)"/>
+    <text x="65" y="40" font-family="Arial" font-size="40" font-weight="bold" fill="#2e7d32" text-anchor="middle">O</text>
+    <text x="65" y="70" font-family="Arial" font-size="12" font-weight="bold" fill="#2e7d32" text-anchor="middle">Open / Closed</text>
+    <text x="65" y="120" font-family="Arial" font-size="10" fill="#555" text-anchor="middle">"Extend, Don't"</text>
+    <text x="65" y="135" font-family="Arial" font-size="10" fill="#555" text-anchor="middle">"Modify"</text>
+  </g>
+
+  <!-- 3. LSP -->
+  <g transform="translate(330, 100)">
+    <rect x="0" y="0" width="130" height="150" rx="10" ry="10" fill="#fff3e0" stroke="#ff9800" stroke-width="2" filter="url(#shadow)"/>
+    <text x="65" y="40" font-family="Arial" font-size="40" font-weight="bold" fill="#ef6c00" text-anchor="middle">L</text>
+    <text x="65" y="70" font-family="Arial" font-size="12" font-weight="bold" fill="#ef6c00" text-anchor="middle">Liskov</text>
+    <text x="65" y="90" font-family="Arial" font-size="12" font-weight="bold" fill="#ef6c00" text-anchor="middle">Substitution</text>
+    <text x="65" y="120" font-family="Arial" font-size="10" fill="#555" text-anchor="middle">"Replaceable"</text>
+    <text x="65" y="135" font-family="Arial" font-size="10" fill="#555" text-anchor="middle">"Subtypes"</text>
+  </g>
+
+  <!-- 4. ISP -->
+  <g transform="translate(470, 100)">
+    <rect x="0" y="0" width="130" height="150" rx="10" ry="10" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" filter="url(#shadow)"/>
+    <text x="65" y="40" font-family="Arial" font-size="40" font-weight="bold" fill="#6a1b9a" text-anchor="middle">I</text>
+    <text x="65" y="70" font-family="Arial" font-size="12" font-weight="bold" fill="#6a1b9a" text-anchor="middle">Interface</text>
+    <text x="65" y="90" font-family="Arial" font-size="12" font-weight="bold" fill="#6a1b9a" text-anchor="middle">Segregation</text>
+    <text x="65" y="120" font-family="Arial" font-size="10" fill="#555" text-anchor="middle">"Tiny Interfaces"</text>
+  </g>
+
+  <!-- 5. DIP -->
+  <g transform="translate(610, 100)">
+    <rect x="0" y="0" width="130" height="150" rx="10" ry="10" fill="#ffebee" stroke="#f44336" stroke-width="2" filter="url(#shadow)"/>
+    <text x="65" y="40" font-family="Arial" font-size="40" font-weight="bold" fill="#c62828" text-anchor="middle">D</text>
+    <text x="65" y="70" font-family="Arial" font-size="12" font-weight="bold" fill="#c62828" text-anchor="middle">Dependency</text>
+    <text x="65" y="90" font-family="Arial" font-size="12" font-weight="bold" fill="#c62828" text-anchor="middle">Inversion</text>
+    <text x="65" y="120" font-family="Arial" font-size="10" fill="#555" text-anchor="middle">"Depend on"</text>
+    <text x="65" y="135" font-family="Arial" font-size="10" fill="#555" text-anchor="middle">"Abstractions"</text>
+  </g>
+
+  <!-- Summary Box -->
+  <rect x="50" y="280" width="690" height="150" rx="10" ry="10" fill="#fafafa" stroke="#ccc" stroke-width="2"/>
+  <text x="395" y="310" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">Goal: Sustainable Code</text>
+  
+  <text x="100" y="350" font-family="Arial" font-size="14" fill="#333">• Easy to Maintain</text>
+  <text x="100" y="380" font-family="Arial" font-size="14" fill="#333">• Easy to Extend</text>
+  <text x="100" y="410" font-family="Arial" font-size="14" fill="#333">• Easy to Test</text>
+
+  <g transform="translate(450, 330)">
+      <text x="0" y="20" font-family="Arial" font-size="14" fill="#555">"Bad Design is rigid, fragile, and immobile."</text>
+      <text x="0" y="50" font-family="Arial" font-size="14" fill="#555">"SOLID Design is flexible and robust."</text>
+      <text x="150" y="80" font-family="Arial" font-size="12" fill="#777" text-anchor="middle">- Robert C. Martin (Uncle Bob)</text>
+  </g>
+
+</svg>

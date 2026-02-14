@@ -1,0 +1,54 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Reliability Metrics Timeline</text>
+
+  <!-- Timeline Base -->
+  <line x1="50" y1="200" x2="750" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="750" y="230" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Time</text>
+
+  <!-- System States -->
+  <!-- UP TIME (Green) -->
+  <rect x="50" y="180" width="300" height="40" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="200" y="205" font-family="Arial" font-size="14" font-weight="bold" fill="#1b5e20" text-anchor="middle">UP (Functioning)</text>
+
+  <!-- DOWN TIME (Red) -->
+  <rect x="350" y="180" width="100" height="40" fill="#ffcdd2" stroke="#c62828" stroke-width="2"/>
+  <text x="400" y="205" font-family="Arial" font-size="14" font-weight="bold" fill="#b71c1c" text-anchor="middle">DOWN</text>
+
+  <!-- UP TIME 2 (Green) -->
+  <rect x="450" y="180" width="300" height="40" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="600" y="205" font-family="Arial" font-size="14" font-weight="bold" fill="#1b5e20" text-anchor="middle">UP (Functioning)</text>
+
+  <!-- Events -->
+  <line x1="350" y1="150" x2="350" y2="250" stroke="#c62828" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="350" y="140" font-family="Arial" font-size="12" font-weight="bold" fill="#c62828" text-anchor="middle">Failure</text>
+  
+  <line x1="450" y1="150" x2="450" y2="250" stroke="#2e7d32" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="450" y="140" font-family="Arial" font-size="12" font-weight="bold" fill="#2e7d32" text-anchor="middle">Repair</text>
+
+  <!-- Metrics Brackets -->
+  
+  <!-- MTTF -->
+  <path d="M 50 250 L 50 260 L 350 260 L 350 250" stroke="#2e7d32" stroke-width="2" fill="none"/>
+  <text x="200" y="280" font-family="Arial" font-size="14" font-weight="bold" fill="#2e7d32" text-anchor="middle">MTTF (Mean Time To Failure)</text>
+  
+  <!-- MTTR -->
+  <path d="M 350 250 L 350 260 L 450 260 L 450 250" stroke="#c62828" stroke-width="2" fill="none"/>
+  <text x="400" y="280" font-family="Arial" font-size="14" font-weight="bold" fill="#c62828" text-anchor="middle">MTTR</text>
+  <text x="400" y="300" font-family="Arial" font-size="10" fill="#c62828" text-anchor="middle">(Repair)</text>
+
+  <!-- MTBF (Total Cycle) -->
+  <path d="M 50 100 L 50 90 L 450 90 L 450 100" stroke="#1565c0" stroke-width="2" fill="none"/>
+  <text x="250" y="80" font-family="Arial" font-size="16" font-weight="bold" fill="#1565c0" text-anchor="middle">MTBF (Mean Time Between Failures)</text>
+  <text x="250" y="60" font-family="Arial" font-size="12" fill="#1565c0" text-anchor="middle">MTBF = MTTF + MTTR</text>
+
+</svg>
